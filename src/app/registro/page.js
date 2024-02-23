@@ -1,5 +1,5 @@
 import React from 'react';
-import "/home/samuel/Documentos/Development/PTAC-3-AULA02-1/src/app/stylesheet/css/Registro.css"; 
+import "../stylesheet/css/Registro.css"; 
 
 export default function Registro() {
     return (
@@ -24,6 +24,5 @@ export default function Registro() {
                 <button type="submit">Registrar</button>
             </form>
         </div>
-       
     );
 }

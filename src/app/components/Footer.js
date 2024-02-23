@@ -1,15 +1,15 @@
 import React from "react";
-import styles from "../stylesheet/css/Footer.css";
+import "../stylesheet/css/Footer.css"; 
 
 export default function Footer() {
   return (
-    <footer className={styles.footer}>
-      <div className={styles.footerContent}>
+    <footer className="footer-container">
+      <div className="footer-content">
         <div>
-          <p>&copy; 2024 Direitos Reservados por [Nome da Empresa]</p>
+          <p>&copy; 2024 Direitos Reservados por ...</p>
         </div>
-        <div className={styles.email}>
-          <p>Email: contato@exemplo.com</p>
+        <div>
+          <p>Email: samueltorochagas@gmail.com</p>
         </div>
       </div>
     </footer>

@@ -1,16 +1,13 @@
-/* Footer.css */
-
-.footer {
-  background-color: #f2f2f2; /* Fundo acinzentado claro */
+.footer-container {
+  background-color: #f2f2f2; 
   padding: 20px;
 }
 
-.footerContent {
+.footer-content {
   display: flex;
-  justify-content: space-between; /* Alinhamento dos itens para ocupar toda a largura */
-  align-items: center; /* Alinhar verticalmente */
+  justify-content: space-between;
 }
 
-.email {
-  text-align: right; /* Alinhar o texto à direita */
+.footer-content p {
+  margin: 0;
 }
