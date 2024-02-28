@@ -1,9 +1,9 @@
-.footer-container {
+.footercontainer {
   background-color: #f2f2f2; 
   padding: 20px;
 }
 
-.footer-content {
+.footercontent {
   display: flex;
   justify-content: space-between;
 }
