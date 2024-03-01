@@ -21,8 +21,9 @@ export default function Registro() {
                     <input type="password" id="senha" name="senha" />
                 </div>
 
-                <button type="submit">Registrar</button>
+                <button className={styles.buttonRegister} type="submit">Registrar</button>
             </form>
         </div>
+        
     );
 }
