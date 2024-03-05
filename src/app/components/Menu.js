@@ -7,22 +7,22 @@ export default function Menu() {
     <header className={styles.header}>
       <nav className={styles.nav}>
         <ul className={styles.navList}>
-      <Link className={styles.navLink} href="/">
-            <li className={styles.navItem}>Home</li>
+          <Link className={styles.navLink} href="/">
+            Home
           </Link>
           <Link className={styles.navLink} href="registro">
-            <li className={styles.navItem}>Registrar</li>
+            Registrar
           </Link>
-          <Link className={styles.navLink} href="localização">
-            <li className={styles.navItem}>Localização</li>
+          <Link className={styles.navLink} href="localizacao">
+            Localização
           </Link>
         </ul>
       </nav>
       <div className={styles.logo}>
-      <Image
-        width={50}
-        height={50}
-        src={"https://auth.openai.com/assets/openai-logo-5lqCnCN9.svg"}
+        <Image
+          width={50}
+          height={50}
+          src={"https://auth.openai.com/assets/openai-logo-5lqCnCN9.svg"}
         />
       </div>
     </header>

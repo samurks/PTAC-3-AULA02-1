@@ -15,16 +15,14 @@
     display: flex;
   }
   
-  .navItem {
-    margin-right: 20px;
-  }
-  
+
   .navLink {
     text-decoration: none;
     color: #333;
     font-weight: bold;
     font-size: 18px;
     transition: color 0.3s ease;
+    margin-right: 20px;
   }
   
   .navLink:hover {

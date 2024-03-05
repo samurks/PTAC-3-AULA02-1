@@ -1,11 +1,8 @@
-import Map from "../componentes/Map";
+import React from 'react'
+import Map from '../components/Map'
 
-export default function Localizacao() {
+export default function LocalizacaoPage() {
   return (
-    <header>
-      <Map />
-
-      
-    </header>
-  );
+    <div><Map/></div>
+  )
 }
