@@ -19,7 +19,11 @@ export default function Menu() {
         </ul>
       </nav>
       <div className={styles.logo}>
-        <a href="https://chat.openai.com/" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://chat.openai.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Image
             width={50}
             height={50}

@@ -1,11 +1,13 @@
-import Link from 'next/link'
+import Link from "next/link";
+import styles from "./not-found.module.css"
 
-export default function NotFound(){
-    return(
-            <div>
-                <h2> Não foi posivel encontrar essa pagina :( </h2>
-                <link href="/">Voltar para pagina inicial</link>
-            </div>
-    )
+export default function NotFound() {
+  return (
+    <div>
+      <h2>Não foi possível encontrar essa página :(</h2>
+      <Link href="/">
+        Voltar para página inicial
+      </Link>
+    </div>
+  );
 }
-
