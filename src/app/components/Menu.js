@@ -19,11 +19,14 @@ export default function Menu() {
         </ul>
       </nav>
       <div className={styles.logo}>
-        <Image
-          width={50}
-          height={50}
-          src={"https://auth.openai.com/assets/openai-logo-5lqCnCN9.svg"}
-        />
+        <a href="https://chat.openai.com/" target="_blank" rel="noopener noreferrer">
+          <Image
+            width={50}
+            height={50}
+            src={"https://auth.openai.com/assets/openai-logo-5lqCnCN9.svg"}
+            alt="OpenAI Logo"
+          />
+        </a>
       </div>
     </header>
   );
