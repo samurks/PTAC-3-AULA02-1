@@ -8,7 +8,7 @@ export default function Menu() {
       <nav className={styles.nav}>
         <ul className={styles.navList}>
           <Link className={styles.navLink} href="/">
-            Home
+            <span aria-label="Página inicial">Home</span>
           </Link>
           <Link className={styles.navLink} href="registro">
             Registrar

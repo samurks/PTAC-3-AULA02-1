@@ -2,6 +2,7 @@ import React from "react";
 
 export default function Map() {
   return (
+    <main>
     <iframe
       id="gmap_canvas"
       src={
@@ -12,5 +13,6 @@ export default function Map() {
       marginheight="0"
       marginwidth="0"
     ></iframe>
+    </main>
   );
 }

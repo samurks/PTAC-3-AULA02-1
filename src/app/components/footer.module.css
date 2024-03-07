@@ -12,13 +12,13 @@
 .footerContent {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .contactInfo {
   display: flex;
   align-items: center;
-  margin-top: 6px; /* Move o conteúdo para baixo */
+  margin-top: 6px; 
+  margin-right: 70px;
 }
 
 .contactInfo a {

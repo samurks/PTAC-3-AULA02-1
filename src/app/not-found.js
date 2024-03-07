@@ -1,4 +1,3 @@
-// pages/not-found.js
 import Link from "next/link";
 import styles from "./not-found.module.css";
 

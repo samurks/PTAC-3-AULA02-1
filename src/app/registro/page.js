@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./registro.module.css";
 
-export default function RegistroPage() {
+export default function RegisterPage() {
   return (
     <div className={styles.registrocontainer}>
       <h1>Registre-se agora!</h1>
