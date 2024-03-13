@@ -8,6 +8,7 @@ export default function Map() {
       src={
         "https://maps.google.com/maps?       q=Nova%20Andradina%20+IFMS+&t=&z=13&ie=UTF8&iwloc=&output=embed"
       }
+
       frameborder="0"
       scrolling="no"
       marginheight="0"

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./registro.module.css";
+import styles from "../styles/registro.module.css";
 
 export default function RegisterPage() {
   return (
