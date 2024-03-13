@@ -3,6 +3,7 @@ import styles from "./registro.module.css";
 
 export default function RegisterPage() {
   return (
+    <div className={styles.fade}>
     <div className={styles.registrocontainer}>
       <h1>Registre-se agora!</h1>
       <form className={styles.registroform}>
@@ -25,6 +26,7 @@ export default function RegisterPage() {
           Registrar
         </button>
       </form>
+    </div>
     </div>
   );
 }

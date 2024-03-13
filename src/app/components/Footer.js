@@ -2,9 +2,12 @@ import React from "react";
 import styles from "./footer.module.css";
 import Image from "next/image";
 
+
 export default function Footer() {
   return (
+  
     <footer className={styles.footerContainer}>
+      <div className={styles.fade}>
       <div className={styles.footerContent}>
         <div className={styles.footerText}>
           <p>
@@ -28,6 +31,7 @@ export default function Footer() {
           </a>
         </div>
       </div>
+    </div>
     </footer>
   );
 }

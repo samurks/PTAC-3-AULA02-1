@@ -4,6 +4,7 @@ import Image from "next/image";
 
 export default function Menu() {
   return (
+    <div className={styles.fade}>
     <header className={styles.header}>
       <nav className={styles.nav}>
         <ul className={styles.navList}>
@@ -33,5 +34,6 @@ export default function Menu() {
         </a>
       </div>
     </header>
+    </div>
   );
 }

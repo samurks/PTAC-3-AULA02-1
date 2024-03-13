@@ -28,3 +28,20 @@
     margin-bottom: 10px;
   }
   
+  .fade{
+  opacity: 0;
+  visibility: visible; 
+  animation-name: fadeIn;
+  animation-duration: 2.5s;
+  animation-fill-mode: forwards; 
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    visibility: visible; 
+  }
+  to {
+    opacity: 1;
+  }
+}
