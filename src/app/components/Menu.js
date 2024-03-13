@@ -14,7 +14,7 @@ export default function Menu() {
             Registrar
           </Link>
           <Link className={styles.navLink} href="localizacao">
-            Localização
+            Mapa
           </Link>
         </ul>
       </nav>
