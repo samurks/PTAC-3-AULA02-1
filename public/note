@@ -1,14 +1,5 @@
-import React from "react";
-import styles from "./styles/home.module.css";
 
-
-export default async function Home(){
-  const response = await fetch("http://localhost:3000/api",{
-    next:{revalidate: 1}
-  });
-  const campus = await response.json();
-
-  return(
+return(
     <div className={styles.fade}>
     <main className={styles.container}>
     <section className={styles.introSection}>
@@ -19,12 +10,10 @@ export default async function Home(){
       campus.map((campi) => 
       <div>
         <p>{campi.nome_campi}</p>
-        <div>{campi.imagem_url}</div>
       </div>
       )
-    }
+    };
     
   </main>
   </div>
   )
-}
