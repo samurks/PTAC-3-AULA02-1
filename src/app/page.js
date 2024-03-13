@@ -19,7 +19,7 @@ export default async function Home(){
       campus.map((campi) => 
       <div>
         <p>{campi.nome_campi}</p>
-        <div>{campi.imagem_url}</div>
+        <img src={campi.imagem_url}></img>
       </div>
       )
     }
