@@ -2,8 +2,6 @@
 
 .footerContainer {
   background-color: #f2f2f2;
-  padding: 20px;
-  position: fixed;
   bottom: 0;
   width: 100%;
 }
@@ -12,13 +10,13 @@
 .footerContent {
   display: flex;
   justify-content: space-between;
+  flex-wrap:wrap ;
 }
 
 .contactInfo {
   display: flex;
   align-items: center;
   margin-top: 6px; 
-  margin-right: 70px;
 }
 
 .contactInfo a {
@@ -52,6 +50,11 @@
   animation-name: fadeIn;
   animation-duration: 2.5s;
   animation-fill-mode: forwards; 
+}
+@media (max-width: 768px) {
+  .footerContent {
+   justify-content: center;
+  }
 }
 
 @keyframes fadeIn {

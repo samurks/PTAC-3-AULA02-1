@@ -1,39 +1,49 @@
-/* home.module.css */
-
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.introSection {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  font-family: 'Roboto', sans-serif; /* Nova fonte */
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.column {
+  flex: 0 0 calc(33.33% - 20px); /* 3 colunas com margens */
+  margin-bottom: 20px;
+}
   
-  .introSection {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  
-  .title {
-    font-size: 36px;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .subtitle {
-    font-size: 18px;
-    color: #666;
-  }
-  
-  .sectionTitle {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .fade{
+.sectionTitle {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.fade{
   opacity: 0;
   visibility: visible; 
   animation-name: fadeIn;
   animation-duration: 2.5s;
   animation-fill-mode: forwards; 
+}
+
+@media (max-width: 768px) {
+  .column {
+    flex: 0 0 100%; /* Apenas uma coluna em telas menores */
+  
+  }
 }
 
 @keyframes fadeIn {
