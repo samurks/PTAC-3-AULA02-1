@@ -136,7 +136,7 @@ const filmes = [
     genero: "Crime, Drama, Mistério",
     imagem_url: "https://upload.wikimedia.org/wikipedia/pt/thumb/4/43/UsualSuspects1995.jpg/512px-UsualSuspects1995.jpg"
   },
-  {
+  { 
     id: 23,
     nome: "The Lion King",
     genero: "Animação, Aventura, Drama",
