@@ -131,7 +131,7 @@ const filmes = [
     imagem_url: "https://m.media-amazon.com/images/I/71JMspdKpAL.jpg"
   },
   {
-    id: 22,
+    id: 22, 
     nome: "The Usual Suspects",
     genero: "Crime, Drama, Mistério",
     imagem_url: "https://upload.wikimedia.org/wikipedia/pt/thumb/4/43/UsualSuspects1995.jpg/512px-UsualSuspects1995.jpg"
