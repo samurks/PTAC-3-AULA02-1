@@ -1,3 +1,5 @@
+/* src/app/styles/home.module.css */
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -20,36 +22,26 @@
   justify-content: space-between;
 }
 
-.column {
-  flex: 0 0 calc(33.33% - 20px); /* 3 colunas com margens */
-  margin-bottom: 20px;
-}
-  
-.sectionTitle {
-  font-size: 24px;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.fade{
+.fade {
   opacity: 0;
-  visibility: visible; 
+  visibility: visible;
   animation-name: fadeIn;
   animation-duration: 2.5s;
-  animation-fill-mode: forwards; 
+  animation-fill-mode: forwards;
 }
 
+/* Aplicando centralização apenas em dispositivos móveis */
 @media (max-width: 768px) {
-  .column {
-    flex: 0 0 100%; /* Apenas uma coluna em telas menores */
-  
+  .grid {
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
   }
 }
 
 @keyframes fadeIn {
   from {
     opacity: 0;
-    visibility: visible; 
+    visibility: visible;
   }
   to {
     opacity: 1;

@@ -6,45 +6,27 @@ export default async function Home(){
   const response = await fetch("http://localhost:3000/api",{
     next:{revalidate: 1}
   });
-  const campus = await response.json();
+  const filmes = await response.json();
 
-  return(
+  return (
     <div className={styles.fade}>
       <main className={styles.container}>
         <section className={styles.introSection}>
-          <h1>Olá, Seja bem-vindo!</h1>
-          <p className={styles.subtitle}>Estamos felizes por você estar aqui.</p>
+          <h1>Descubra os Melhores Filmes!</h1>
+          <p className={styles.subtitle}>Explore nossa seleção de filmes incríveis.</p>
         </section>
         <div className={styles.grid}>
-          <div className={styles.column}>
-            {campus.slice(0, Math.ceil(campus.length / 3)).map((campi) => (
-              <Card
-                key={campi.id}
-                imagemUrl={campi.imagem_url}
-                nomeCampus={campi.nome_campi}
-              />
-            ))}
-          </div>
-          <div className={styles.column}>
-            {campus.slice(Math.ceil(campus.length / 3), Math.ceil((campus.length / 3) * 2)).map((campi) => (
-              <Card
-                key={campi.id}
-                imagemUrl={campi.imagem_url}
-                nomeCampus={campi.nome_campi}
-              />
-            ))}
-          </div>
-          <div className={styles.column}>
-            {campus.slice(Math.ceil((campus.length / 3) * 2)).map((campi) => (
-              <Card
-                key={campi.id}
-                imagemUrl={campi.imagem_url}
-                nomeCampus={campi.nome_campi}
-              />
-            ))}
-          </div>
+          {/* Renderização dos cards dos filmes */}
+          {filmes.map((filme) => (
+            <Card
+              key={filme.id}
+              imagemUrl={filme.imagem_url}
+              nomeFilme={filme.nome}
+              genero={filme.genero}
+            />
+          ))}
         </div>
       </main>
     </div>
-  )
+  );
 }
