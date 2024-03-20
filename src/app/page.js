@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import Card from "./components/Card";
 import styles from "./styles/home.module.css";
 
@@ -23,10 +24,13 @@ export default async function Home(){
               imagemUrl={filme.imagem_url}
               nomeFilme={filme.nome}
               genero={filme.genero}
+              url_filme={filme.url_filme}
             />
           ))}
         </div>
       </main>
     </div>
   );
-}
+};
+
+
