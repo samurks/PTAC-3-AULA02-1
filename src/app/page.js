@@ -1,15 +1,14 @@
 import React from "react";
-import Link from "next/link";
 import Card from "./components/Card";
 import styles from "./styles/home.module.css";
 
 export default async function Home(){
-  const response = await fetch("http://localhost:3000/api",{
+  const response = await fetch("https://back-end-ifms-phi.vercel.app/campi",{
     next:{revalidate: 1}
   });
-  const filmes = await response.json();
+  const campi = await response.json();
 
-  return (
+  return(
     <div className={styles.fade}>
       <main className={styles.container}>
         <section className={styles.introSection}>
@@ -17,15 +16,13 @@ export default async function Home(){
           <p className={styles.subtitle}>Explore nossa seleção de filmes incríveis.</p>
         </section>
         <div className={styles.grid}>
-          {/* Renderização dos cards dos filmes */}
-          {filmes.map((filme) => (
+         
+          {campi.map((campus) => (
             <Card
-              key={filme.id}
-              imagemUrl={filme.imagem_url}
-              nomeFilme={filme.nome}
-              genero={filme.genero}
-              url_filme={filme.url_filme}
-            />
+            key={campus.id}
+            imagemUrl={campus.image_url}
+            nomeCampus={campus.nome_campus}
+          />
           ))}
         </div>
       </main>

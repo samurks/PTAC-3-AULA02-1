@@ -1,15 +1,16 @@
 // src/app/components/Card.js
 
+import Image from "next/image";
 import React from "react";
 import styles from "../styles/card.module.css";
 
-// Componente de card para exibir informações do filme
-const Card = ({ imagemUrl, nomeFilme, genero }) => {
+
+const Card = ({ imagemUrl, nomeCampus, genero }) => {
   return (
     <div className={styles.card}>
-      <img src={imagemUrl} alt={nomeFilme} />
-      <h3>{nomeFilme}</h3>
-      <p className={styles.genre}>{genero}</p> {/* Adicionando a classe para o gênero */}
+      <Image   width={300}
+            height={150}src={imagemUrl} />
+      <h3>{nomeCampus}</h3>
     </div>
   );
 };
