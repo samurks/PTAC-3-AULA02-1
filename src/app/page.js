@@ -3,9 +3,15 @@ import Card from "./components/Card";
 import styles from "./styles/home.module.css";
 
 export default async function Home(){
-  const response = await fetch("https://back-end-ifms-phi.vercel.app/campi",{
+  try {
+  const response = await fetch("https://back-end-ifms-ebon.vercel.app/campi ",{
     next:{revalidate: 1}
   });
+
+  if (!response.ok) {
+    throw new Error("Erro na requisição");
+  }
+
   const campi = await response.json();
 
   return(
@@ -28,6 +34,13 @@ export default async function Home(){
       </main>
     </div>
   );
-};
-
+  } catch (error) {
+    return (
+      <div>
+        <h1>Erro 505: API Indisponível</h1>
+        <p>Atualmente, a API não está disponível. Tente novamente mais tarde.</p>
+      </div>
+    );
+  }
+}
 
