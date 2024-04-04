@@ -26,15 +26,15 @@
           <div className={styles.logo}>
             {/* Logo do OpenAI */}
             <a
-              href="https://chat.openai.com/"
+              href="https://localhost:3000"
               target="_blank"
               rel="noopener noreferrer"
             >
               <Image
                 width={50}
                 height={50}
-                src={"https://auth.openai.com/assets/openai-logo-5lqCnCN9.svg"}
-                alt="OpenAI Logo"
+                src={"https://www.ifms.edu.br/marcaifms.png"}
+                alt="IFMS Logo"
               />
             </a>
           </div>

@@ -4,7 +4,7 @@ import styles from "./styles/home.module.css";
 
 export default async function Home(){
   try {
-    const response = await fetch("https://back-end-ifms-ebon.vercel.app/capi",{
+    const response = await fetch("https://back-end-ifms-ebon.vercel.app/campi",{
       next:{revalidate: 1}
     });
 
@@ -15,7 +15,7 @@ export default async function Home(){
     const campi = await response.json();
 
     return(
-      <div className={styles.fade}>
+     
         <main className={styles.container}>
           <section className={styles.introSection}>
             <h1>Veja os Campus!</h1>
@@ -32,7 +32,7 @@ export default async function Home(){
             ))}
           </div>
         </main>
-      </div>
+      
     );
   } catch (error) {
     console.log(error.message)

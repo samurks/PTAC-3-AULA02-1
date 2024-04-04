@@ -19,8 +19,8 @@ export default function RegisterPage() {
 
 
   return (
-    <div className={styles.fade}>
-    <div className={styles.registrocontainer}>
+   <main className={styles.registrocontainer}>
+    <div>
       <h1>Registre-se agora!</h1>
       <form className={styles.registroform} onSubmit={handleSubmit}>
 
@@ -39,6 +39,6 @@ export default function RegisterPage() {
         </button>
       </form>
     </div>
-    </div>
+    </main>
   );
 }

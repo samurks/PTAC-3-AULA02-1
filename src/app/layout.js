@@ -1,5 +1,5 @@
 // src/app/layout.js
-
+import styles from "./styles/home.module.css";
 import Menu from "./components/Menu";
 import Footer from "./components/Footer";
 
@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
-      <body>
+      <body className={styles.fade}>
         {/* Componente de menu */}
         <Menu />
         {children}
